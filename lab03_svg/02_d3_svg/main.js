@@ -26,7 +26,7 @@ function drawIntoSVG() {
   .attr('r', 50)
   .attr('cx', 100)
   .attr('cy', 100)
-  .attr('fill', "pink");
+  .attr('fill', "purple");
 
   //  draw a rectangle
   svg
@@ -35,7 +35,7 @@ function drawIntoSVG() {
   .attr('y', 50)
   .attr('width', 400)
   .attr('height', 100)
-  .attr('fill', "teal");
+  .attr('fill', "orange");
 
   // draw text
   svg
@@ -88,6 +88,6 @@ function drawWithDataAndScales(data) {
     .join("circle")
     .attr('fill', "grey")
     .attr('cy', height/2)
-    .attr('cx', function(d, i) {return x(i);})
-    .attr('r', function(d) { return radius(d.population) });
+    .attr('cx', (d, i) => {return x(i);})
+    .attr('r', d => { return radius(d.population) });
 }
