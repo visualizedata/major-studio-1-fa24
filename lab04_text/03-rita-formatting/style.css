@@ -1,0 +1,37 @@
+body {
+  /* remove default margin and padding */
+  overflow: auto;
+  font-family: 'serif';
+  background: #C8E6F4;
+  padding: 2rem;
+  color: black;
+  line-height: 130%;
+  font-size: 30px;
+  
+}
+
+#app {
+  /* center the content */
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+.noun {
+ background-color: #E18331;
+}
+
+.adjective {
+  background-color: #F4B9E3;
+}
+
+.verb {
+  background-color: lightgreen;
+}
+
+.highlight {
+  /* add italics */
+  font-style: italic;
+  display: inline-block;
+  padding: 5px;
+}

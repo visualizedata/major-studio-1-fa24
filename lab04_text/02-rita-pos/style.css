@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: auto;
+  font-family: sans-serif;
+  background: #165472;
+  padding: 2rem;
+  color: lightblue;
+  letter-spacing: 0.25pt;
+}
+
+#app {
+  margin-top: 15px;
+  font-size: 1.5rem;
+}
+
+#myInput {
+  width: 200px;
+  padding: 10px;
+}
+
+button {
+  padding: 10px;
+  background: lightblue;
+  border: none;
+  cursor: pointer;
+}
