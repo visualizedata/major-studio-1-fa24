@@ -25,9 +25,9 @@ function analyzeData(lines) {
   let phrase;
   let frequency = [];
   // loop over the array
-  lines.forEach(i => {
+  lines.forEach(line => {
     // split the line into words
-    let words = i.split(' ');
+    let words = line.split(' ');
     // loop over the words
     words.forEach(word => {
       // remove empty words
@@ -36,9 +36,9 @@ function analyzeData(lines) {
       phrase = word.replace(/[^a-zA-Z ]/g, "");
       // check if the word is in the array
       let match = false;
-      frequency.forEach(n => {
-        if(n.word == word) {
-          n.count++;
+      frequency.forEach(i => {
+        if(i.word == word) {
+          i.count++;
           match = true;
         }
       });
