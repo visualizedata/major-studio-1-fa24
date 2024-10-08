@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Art Gallery</title>
+
+    <style type="text/css">
+      * {
+        margin:0;padding:0;
+        box-sizing: border-box;
+      }
+      body{
+        overflow:  auto;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        background:#e0e0e0;
+        padding:2rem;
+        color:#222;
+        letter-spacing:-0.5pt;
+      }
+      #app{
+        margin-top:2rem;
+        display:grid;
+        grid-template-columns:repeat(auto-fill, minmax(200px, 1fr));
+        grid-gap: 2rem;
+      }
+      div.card{
+        max-width: 400px;
+        display: inline-block;
+
+        vertical-align:top;
+        white-space:normal;
+      }
+      div.card h2{
+        font-size:1.2rem;
+        line-height:1.1;
+        padding-bottom:0.5em;
+      }
+      div.card div.image{
+        margin-bottom:1rem;
+        width:200px;height:200px;
+        display:flex;
+        align-items: flex-end;
+      }
+      div.card div.image img{
+        max-width:100%;height:auto;
+        max-height:200px;
+      }
+      .object-date{ color:#999; }
+    </style>
+  </head>
+  <body>
+
+    <h1>Image Collection</h1>
+    
+    <!-- where our images go -->
+    <div id="app"></div>
+
+  </body>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="main.js"></script>
+</html>
